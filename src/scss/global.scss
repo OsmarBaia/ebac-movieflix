@@ -1,0 +1,19 @@
+@use 'variables';
+@use 'navbar';
+@use 'hero';
+@use 'about';
+
+@use 'search';
+@use 'details';
+
+// Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: variables.$font-global;
+}
+
+body{
+    background-color: variables.$secondary-color !important;
+}

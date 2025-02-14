@@ -1,0 +1,64 @@
+@use 'variables';
+
+
+section.hero{
+    width: 100%;
+    height: auto;
+    min-height: 340px;
+
+    img.hero__banner{
+        width: 100%;
+        height: auto;
+        min-height: 340px;
+        object-fit: cover;
+    }
+
+    div{
+        position: absolute;
+        top: 45%;
+        left: 5%;
+
+        @media screen and (max-width: 375px) {
+            top: 40%;
+        }
+
+        @media screen and (min-width: variables.$breakpoint-md) {
+            top: 50%;
+        }
+        
+        @media screen and (min-width: variables.$breakpoint-xl) {
+            top: 60%;
+        }
+
+        .hero__title{
+            color: red;
+            font-weight: bold;
+            font-size: variables.$header-size-base;
+            font-family: variables.$font-hero-title;
+            text-shadow: variables.$text-outline-1;
+
+            @media screen and (min-width: variables.$breakpoint-lg) {
+                font-size: variables.$header-size-xl;
+            }
+        }
+
+        .hero__details{
+            font-weight: bold;
+            text-shadow: variables.$text-outline-1;
+            font-size: variables.$font-size-base;
+
+            @media screen and (min-width: variables.$breakpoint-lg) {
+                font-size: variables.$font-size-lg;
+            }
+        }
+
+        button{
+            color: #000;
+            font-weight: bold;
+
+            @media screen and (min-width: variables.$breakpoint-lg) {
+                font-size: variables.$font-size-lg;
+            }
+        }
+    }
+}

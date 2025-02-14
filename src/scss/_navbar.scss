@@ -1,0 +1,13 @@
+@use 'variables';
+header.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+
+    .navbar-brand{
+        font-family: variables.$font-header-title;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: variables.$primary-color;
+    }
+}

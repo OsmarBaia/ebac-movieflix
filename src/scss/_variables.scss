@@ -1,0 +1,44 @@
+$primary-color: #ffc107;
+$secondary-color: #343a40;
+$text-color: #fff;
+
+// Gerais
+// Fontes
+$font-global: "Open Sans", sans-serif;
+$font-header-title: "Bruno Ace SC", cursive;
+$font-hero-title: "Mynerve", serif;
+
+// Font Sizes
+$font-size-x-sm: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-md: 1.25rem;
+$font-size-lg: 1.5rem;
+$font-size-x-lg: 2rem;
+
+// Headers
+$header-size-base: 4rem;
+$header-size-xl: 5rem;
+
+// Font Weights
+$font-weight-1: 300;
+$font-weight-2: 400;
+$font-weight-3: 500;
+$font-weight-4: 600;
+$font-weight-5: 700;
+$font-weight-6: 800;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+//Outlines
+$text-outline-1: (
+    -1px -1px 0 black, /* Sombra superior esquerda */
+     1px -1px 0 black, /* Sombra superior direita */
+    -1px  1px 0 black, /* Sombra inferior esquerda */
+     1px  1px 0 black  /* Sombra inferior direita */
+);
