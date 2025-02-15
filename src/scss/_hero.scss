@@ -13,7 +13,26 @@ section.hero{
         object-fit: cover;
     }
 
-    div{
+    div.hero__blur{
+        height: 100%;
+        min-height: 340px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #000, transparent);
+        background-size: 100% 100%;
+        background-position: left top;
+
+        @media screen and (max-width: variables.$breakpoint-md) {
+            width: 60%;
+        }
+
+        @media screen and (min-width: variables.$breakpoint-md) {
+            width: 40%;
+        }
+    }
+
+    div.hero__container{
         position: absolute;
         top: 0;
         left: 0;
@@ -30,18 +49,30 @@ section.hero{
             font-family: variables.$font-hero-title;
             text-shadow: variables.$text-outline-1;
 
-            @media screen and (min-width: variables.$breakpoint-lg) {
+            @media screen and (min-width: variables.$breakpoint-md) {
                 font-size: variables.$header-size-xl;
             }
         }
 
         .hero__details{
-            font-weight: bold;
+            opacity: .7;
             text-shadow: variables.$text-outline-1;
-            font-size: variables.$font-size-base;
+            font-size: variables.$font-size-sm;
 
-            @media screen and (min-width: variables.$breakpoint-lg) {
-                font-size: variables.$font-size-lg;
+            
+            &:first-of-type
+            {
+                font-weight: bold;
+                opacity: 1;
+                font-size: variables.$font-size-sm;
+            }
+           
+            @media screen and (min-width: variables.$breakpoint-md) {
+                font-size: variables.$font-size-md;
+                &:first-of-type
+                {
+                    font-size: variables.$font-size-lg;
+                }
             }
         }
 
