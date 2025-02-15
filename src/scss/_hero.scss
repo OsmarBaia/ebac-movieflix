@@ -15,21 +15,14 @@ section.hero{
 
     div{
         position: absolute;
-        top: 45%;
-        left: 5%;
+        top: 0;
+        left: 0;
+        transform: translate(5%, 50%);
 
-        @media screen and (max-width: 375px) {
-            top: 40%;
-        }
-
-        @media screen and (min-width: variables.$breakpoint-md) {
-            top: 50%;
+        @media screen and (min-width: variables.$breakpoint-xl) {
+            transform: translate(10%, 90%);
         }
         
-        @media screen and (min-width: variables.$breakpoint-xl) {
-            top: 60%;
-        }
-
         .hero__title{
             color: red;
             font-weight: bold;

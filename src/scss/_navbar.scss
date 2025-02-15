@@ -3,11 +3,32 @@ header.navbar{
     width: 100%;
     position: fixed;
     z-index: 1000;
+    padding: 0.5rem;
+
+    background-color: variables.$secondary-color !important;
 
     .navbar-brand{
         font-family: variables.$font-header-title;
         font-size: 1.5rem;
         font-weight: bold;
         color: variables.$primary-color;
+    }
+
+    button{
+        &:hover{
+            border-color: variables.$primary-color;
+        }
+
+        &:focus{
+            box-shadow: 0 0 0 1px variables.$primary-color;
+        }
+    }
+
+    .navbar-nav{
+        padding-bottom: .5rem;
+    }
+
+    .nav-item{
+        color: variables.$secondary-text-color;
     }
 }

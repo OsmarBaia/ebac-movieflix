@@ -1,3 +1,5 @@
+@use "variables";
+
 .modal-content {
     transition: transform 0.3s ease-in-out;
 }
@@ -6,4 +8,32 @@
 }
 .modal.show .modal-dialog {
     transform: scale(1);
+}
+
+.modal{
+    transform: translate(0, 10%);
+
+    .modal-content{
+        padding: 1rem 2rem 2rem;
+        color: variables.$text-color;
+        border: 1px solid variables.$primary-color;
+        background-color: variables.$secondary-color
+    }
+
+   input{
+    background-color: variables.$secondary-color;
+    // border-color: variables.$primary-color;
+    
+    &::placeholder{
+        color: variables.$text-color;
+        opacity: 0.6;
+    }
+
+    &:focus{
+        border-color: variables.$primary-color;
+        background-color: variables.$secondary-color;
+        box-shadow: none;
+        color: variables.$text-color;
+    }
+   }
 }
