@@ -1,0 +1,26 @@
+@use 'variables';
+
+.carousel-item {
+    iframe{
+        width: 100%;
+        height: auto;
+        min-height: 240px;
+
+        @media screen and (min-width: variables.$breakpoint-md) {
+            min-height: 360px;
+        }
+
+        @media screen and (min-width: variables.$breakpoint-lg) {
+            min-height: 480px;
+        }
+
+        @media screen and (min-width: variables.$breakpoint-xl) {
+            min-height: 720px;
+        }
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 1000;
+}

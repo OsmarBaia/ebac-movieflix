@@ -10,6 +10,7 @@
     justify-content: space-between;
 
     @media screen and (min-width: variables.$breakpoint-lg) {
+        padding: 0;
         align-items: flex-start;
     }
 
@@ -26,19 +27,11 @@
 
         .about_title{
             margin-top: 2rem;
-            font-size: 2rem;
-            font-weight: bold;
-            color: variables.$primary-color;
-
-            @media screen and (min-width: variables.$breakpoint-md) {
-                margin-top: 2rem;
-            }
         }
 
         .about__text{
-            margin: 1rem 0;
             text-indent: 1rem;
-            padding: 1rem .25rem;
+            padding: 0 .25rem;
         }
       
     }
@@ -47,8 +40,8 @@
         position: absolute;
         right: 0;
         top: 0;
-        transform: translate(-10%, -35%);
-        width: 140px;
+        transform: translate(-10%, -55%);
+        width: 150px;
         border: 2px solid variables.$primary-color;
         border-radius: 1rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -62,8 +55,8 @@
  
 
         @media screen and (min-width: variables.$breakpoint-lg) {
-            position: static;
-            transform: translate(-5%, -35%);
+            position: absolute;
+            transform: translate(-5%, -40%);
             width: 100%;
             max-width: 30%;
         }

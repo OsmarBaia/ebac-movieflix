@@ -3,6 +3,7 @@
 @use 'hero';
 @use 'about';
 @use 'search';
+@use 'carousel';
 @use 'details';
 
 // Reset
@@ -15,4 +16,20 @@
 
 body{
     background-color: variables.$secondary-color !important;
+}
+
+// Section Header
+section{
+    margin: 2rem 0;
+    &:first-of-type{
+        margin: 0;
+    }
+
+    h2{
+        font-weight: bold;
+        color: variables.$primary-color;
+        font-size: variables.$font-size-x-lg;
+        vertical-align: middle;
+    }
+
 }
