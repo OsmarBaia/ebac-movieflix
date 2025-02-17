@@ -1,7 +1,3 @@
-// import "./jquery-3.7.1.min.js";
-// import "./jquery-migrate-3.5.0.min.js";
-// import "./slick.min.js";
-
 $(document).ready(function () {
     $('.responsive').slick({
       dots: true,
