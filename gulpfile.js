@@ -21,6 +21,16 @@ export function styles() {
         .pipe(browserSync.stream());
 }
 
+// Compilar Slick SCSS para CSS
+export function slick_styles() {
+    return gulp.src('src/scss/slick.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(cleanCSS())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(browserSync.stream());
+}
+
 // Minificar JavaScript
 export function scripts() {
     return gulp.src('src/js/**/*.js')
@@ -48,4 +58,4 @@ export function watchFiles() {
 }
 
 // Tarefa padrão
-export default gulp.parallel(styles, scripts, images, watchFiles);
+export default gulp.parallel(styles,slick_styles, scripts, images, watchFiles);
