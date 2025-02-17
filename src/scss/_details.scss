@@ -16,5 +16,9 @@
             color: variables.$secondary-color !important;
             background-color: variables.$primary-color !important;
         }
+
+        &:active{
+            color: variables.$primary-color !important;
+        }
     }
 }
