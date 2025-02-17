@@ -1,11 +1,20 @@
 @use 'variables';
 
-.datails {
+.details {
     padding: 0 1rem;
 
     p{
         span{
             color: variables.$primary-color;
+        }
+    }
+
+    button{
+        font-weight: bold;
+        color: variables.$text-color;
+        &.active{
+            color: variables.$secondary-color !important;
+            background-color: variables.$primary-color !important;
         }
     }
 }
